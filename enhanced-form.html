@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Software Engineering Resources & Registration</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<header>
+    <h1>Software Engineering Resources & Workshop Registration</h1>
+    <p>This page demonstrates HTML5 lists, tables, and media related to software engineering, followed by a complete, validated registration form.</p>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#lists">Key Topics</a></li>
+        <li><a href="#table">Workshop Schedule</a></li>
+        <li><a href="#media">Learning Media</a></li>
+        <li><a href="#form">Registration Form</a></li>
+    </ul>
+</nav>
+
+<main>
+    <!-- Lists Section -->
+    <section id="lists">
+        <h2>Software Engineering Topics</h2>
+
+        <h3>Core Areas</h3>
+        <ul>
+            <li>Requirements Analysis</li>
+            <li>System Design</li>
+            <li>Software Testing</li>
+            <li>Project Management</li>
+        </ul>
+
+        <h3>Software Development Life Cycle (SDLC) Steps</h3>
+        <ol>
+            <li>Planning</li>
+            <li>Design</li>
+            <li>Implementation</li>
+            <li>Testing</li>
+            <li>Deployment</li>
+            <li>Maintenance</li>
+        </ol>
+    </section>
+
+    <!-- Table Section -->
+    <section id="table">
+        <h2>Upcoming Software Engineering Workshops</h2>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Workshop</th>
+                    <th>Date</th>
+                    <th>Mode</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Agile Development Fundamentals</td>
+                    <td>2025-09-20</td>
+                    <td>Online</td>
+                </tr>
+                <tr>
+                    <td>Software Testing Automation</td>
+                    <td>2025-10-05</td>
+                    <td>In-Person</td>
+                </tr>
+                <tr>
+                    <td>DevOps Practices for Teams</td>
+                    <td>2025-11-12</td>
+                    <td>Hybrid</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Media Section -->
+    <section id="media">
+        <h2>Learning Media</h2>
+
+        <h3>Sample Diagram</h3>
+        <img src="Software Development Life Cycle (SDLC).jpg" 
+             alt="Software Development Life Cycle Diagram" width="500">
+
+        <h3>Software Engineering Overview Video</h3>
+        <video controls width="500">
+             <source src="C:\Users\Admin\Downloads\6330779-hd_1920_1080_30fps.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <h3>Music Sound</h3>
+        <audio controls>
+            <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </section>
+
+    <!-- Form Section -->
+    <section id="form">
+        <h2>Workshop Registration Form</h2>
+        <form action="#" method="post" autocomplete="on">
+            
+            <fieldset>
+                <legend>Personal Information</legend>
+                
+                <label for="fullname">Full Name *</label>
+                <input type="text" id="fullname" name="fullname" placeholder="Daisy Cheburet" required>
+
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" name="email" placeholder="cheburetdaisy65@gmail.com" required>
+
+                <label for="phone">Phone Number *</label>
+                <input type="tel" id="phone" name="phone" placeholder="0725758458" 
+                       pattern="[0]{1}[7]{1}[0-9]{8}" required 
+                       title="Phone number must start with 07 and be 10 digits long.">
+                
+                <label for="dob">Date of Birth *</label>
+                <input type="date" id="dob" name="dob" required>
+
+                <label for="username">Username (readonly)</label>
+                <input type="text" id="username" name="username" value="SE_User_001" readonly>
+            </fieldset>
+
+            <fieldset>
+                <legend>Workshop Details</legend>
+
+                <label for="password">Password *</label>
+                <input type="password" id="password" name="password" 
+                       placeholder="Enter a secure password" required minlength="8">
+
+                <label for="color">Preferred UI Theme Color</label>
+                <input type="color" id="color" name="color" value="#0000ff">
+
+                <label for="country">Country *</label>
+                <select id="country" name="country" required>
+                    <option value="">--Select--</option>
+                    <option value="kenya">Kenya</option>
+                    <option value="usa">United States</option>
+                    <option value="uk">United Kingdom</option>
+                    <option value="india">India</option>
+                </select>
+            </fieldset>
+
+            <input type="submit" value="Register">
+        </form>
+    </section>
+
+</main>
+
+</body>
+</html>
